@@ -1,0 +1,30 @@
+
+Software Dev:
+    Orbital speed & trajectory, - Fetch API
+    Fix the line for non arrow and thicker
+    Start
+    How many astrounauts are in space - https://wheretheiss.at/w/developer
+    
+
+
+
+
+Web Dev:
+    Github pages to launch
+    React (JS) for frontend web dev
+    Django (Python) for backend (API migration, turtle screen)
+
+    React file structure:
+        - public is a folder that we can use to store our static assets, such as images, svgs, and fonts for our React app.
+        - src is a folder that contains our source code. It is where all of our React-related code will live and is what we will primarily work in to build our app.
+
+
+Goals:
+    - Fundamental understading and experience with Python
+    - Learn Django, React, Building web apps
+    - API calls, fetching and recieving 
+    - Project mangament
+    - Git control
+    - Software development Process  Agile
+
+
