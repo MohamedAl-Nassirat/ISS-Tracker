@@ -16,7 +16,8 @@ iss = turtle.Turtle()
 iss.shape("iss.gif")
 iss.setheading(45) # 45 Deg
 iss.penup()
-
+line = turtle.Turtle()
+line.penup()
 input("start")
 
 
@@ -28,9 +29,14 @@ while True:
     latitude = float(result["iss_position"]["latitude"])
     longitude =  float(result["iss_position"]["longitude"]) 
     iss.goto(longitude,latitude) #update shape position with the new long, 
+    line.goto(longitude,latitude)
+    line.pencolor("red")
+    line.pendown()
     time.sleep(5) # Update every 5s =
-    iss.write(longitude,font=("Arial", 8, "normal") , align="center")
+    iss.clear()
+    iss.write(longitude,font=("Arial", 10, "normal") , align="left")
 
 
     
 
+    
