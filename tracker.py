@@ -46,15 +46,18 @@ font= ("Arial", 15, "normal")
 
 # Update the location on the screen
 while True:
+    try:
         # ISS Long + Lat API
-    url = "http://api.open-notify.org/iss-now.json"
-    response = urllib.request.urlopen(url)
-    result = json.loads(response.read())
+        url = "http://api.open-notify.org/iss-now.json"
+        response = urllib.request.urlopen(url)
+        result = json.loads(response.read())
 
-    # Orbital Velocity API 
-    url2 = "https://api.wheretheiss.at/v1/satellites/25544"
-    response2= urllib.request.urlopen(url2)
-    result2 = json.loads(response2.read())
+        # Orbital Velocity API 
+        url2 = "https://api.wheretheiss.at/v1/satellites/25544"
+        response2= urllib.request.urlopen(url2)
+        result2 = json.loads(response2.read())
+    except:
+        print("API fetching failed.")
     # Load in values from the API
     latitude = float(result["iss_position"]["latitude"])
     longitude =  float(result["iss_position"]["longitude"])
