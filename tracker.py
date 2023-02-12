@@ -44,7 +44,7 @@ velocityText.hideturtle()
 font= ("Arial", 15, "normal") 
 
 
-# Update the location on the screen
+# Update the location on  the screen
 while True:
     try:
         # ISS Long + Lat API
